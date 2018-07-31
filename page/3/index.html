@@ -384,7 +384,7 @@
       
         
           
-            <p>ios的软键盘弹出会把整个文本区域抵上来，但是安卓会覆盖部分的文本，很不友好的<br>先上效果图：<br>安卓：<br><img src="bug-ios-android/1.png" alt="这里写图片描述"></p>
+            <p>ios的软键盘弹出会把整个文本区域抵上来，但是安卓会覆盖部分的文本，很不友好的<br>先上效果图：<br>安卓：<br><img src="/2018/05/31/bug-ios-android/1.png" alt="这里写图片描述"></p>
 <p>实现的方法就是display：flex的实现，如果有表单，千万不要使用的position的方法，这样安卓肯定会挂掉。</p>
 <p>形式一：外部一个container 里面有个content，但是content是绝对居中的，第一反应是position，但是有表单的话，就要放弃这种方法。</p>
 <p><strong>注：有表单就该使用 flex的方法</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">	display: flex;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: center;</span><br><span class="line">&#125;</span><br><span class="line">.content &#123;</span><br><span class="line">	width:100px;</span><br><span class="line">	height:100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -1127,7 +1127,7 @@
           
             <p>本项目基于<strong>vue</strong>的项目来讲解：</p>
 <ul>
-<li>准备一个QQ号，打开你的QQ邮箱，设置-&gt; 账户<br><img src="email/1.jpeg" alt="这里写图片描述"></li>
+<li>准备一个QQ号，打开你的QQ邮箱，设置-&gt; 账户<br><img src="/2018/05/31/email/1.jpeg" alt="这里写图片描述"></li>
 </ul>
 <p>将SMTP服务设置 为 开启状态 ,并且点击生成授权码，将授权码保存好，后面会用到的</p>
 <ul>
