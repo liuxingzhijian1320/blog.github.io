@@ -1,0 +1,52 @@
+---
+title: 线条动画
+date: 2018-07-13 14:07:08
+tags:
+---
+
+- 动画的预览
+![这里写图片描述](css-line-animation-1/1.gif)
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标移入下划线展开</title>
+    <style type="text/css">
+        #line {
+            width: 500px;
+            height: 50px;
+            background: gray;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        #line:after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background: red;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transition: all .5s;
+        }
+
+        #line:hover:after {
+            left: 0%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="line"></div>
+
+</body>
+
+</html>
+
+```
